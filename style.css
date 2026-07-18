@@ -128,3 +128,78 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* Dark Theme */
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: #000;
+}
+
+.dark-mode .skill-card,
+.dark-mode .project-card {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .contact input,
+.dark-mode .contact textarea {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .tech-container span {
+    background: #2196f3;
+}
+
+#theme-toggle {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .skills-container,
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card,
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+}

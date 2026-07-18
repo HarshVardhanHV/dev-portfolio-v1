@@ -1,175 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>My Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-<header>
-
-    <nav class="navbar">
-
+  <body>
+    <header>
+      <nav class="navbar">
         <h2 class="logo">MyPortfolio</h2>
 
         <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
 
-            <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
 
-            <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
 
-            <li><a href="#skills">Skills</a></li>
+          <li><a href="#tech">Tech Stack</a></li>
 
-            <li><a href="#tech">Tech Stack</a></li>
+          <li><a href="#projects">Projects</a></li>
 
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
+          <li><a href="#contact">Contact</a></li>
         </ul>
 
-    </nav>
+        <button id="theme-toggle">🌙</button>
+      </nav>
+    </header>
 
-</header>
+    <main>
+      <section id="hero" class="hero">
+        <h1>Hello, I'm Your Name</h1>
 
-<main>
+        <p>Aspiring Software Engineer</p>
 
-<section id="hero" class="hero">
+        <button>View Projects</button>
+      </section>
 
-    <h1>Hello, I'm Your Name</h1>
+      <section id="about" class="about">
+        <h2>About Me</h2>
 
-    <p>Aspiring Software Engineer</p>
+        <p>
+          I am an aspiring software engineer passionate about web development,
+          problem solving, and learning modern technologies.
+        </p>
+      </section>
 
-    <button>View Projects</button>
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
 
-</section>
-
-<section id="about" class="about">
-
-    <h2>About Me</h2>
-
-    <p>
-        I am an aspiring software engineer passionate about web development,
-        problem solving, and learning modern technologies.
-    </p>
-
-</section>
-
-<section id="skills" class="skills">
-
-    <h2>Skills</h2>
-
-    <div class="skills-container">
-
-        <div class="skill-card">
+        <div class="skills-container">
+          <div class="skill-card">
             <h3>Frontend</h3>
             <p>HTML5, CSS3, JavaScript</p>
-        </div>
+          </div>
 
-        <div class="skill-card">
+          <div class="skill-card">
             <h3>Programming</h3>
             <p>Java, Python</p>
-        </div>
+          </div>
 
-        <div class="skill-card">
+          <div class="skill-card">
             <h3>Tools</h3>
             <p>Git, GitHub, VS Code</p>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <section id="tech" class="tech-stack">
+        <h2>Tech Stack</h2>
 
-</section>
+        <div class="tech-container">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>VS Code</span>
+          <span>Learning React</span>
+        </div>
+      </section>
 
-<section id="tech" class="tech-stack">
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
 
-    <h2>Tech Stack</h2>
-
-    <div class="tech-container">
-
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JavaScript</span>
-        <span>Git</span>
-        <span>GitHub</span>
-        <span>VS Code</span>
-        <span>Learning React</span>
-
-    </div>
-
-</section>
-
-<section id="projects" class="projects">
-
-    <h2>Projects</h2>
-
-    <div class="project-container">
-
-        <div class="project-card">
+        <div class="project-container">
+          <div class="project-card">
             <h3>AI Chatbot</h3>
             <p>A simple chatbot built using JavaScript.</p>
-        </div>
+          </div>
 
-        <div class="project-card">
+          <div class="project-card">
             <h3>Portfolio Website</h3>
             <p>This responsive portfolio website.</p>
-        </div>
+          </div>
 
-        <div class="project-card">
+          <div class="project-card">
             <h3>Coming Soon</h3>
             <p>Future projects will be added here.</p>
+          </div>
         </div>
+      </section>
 
-    </div>
+      <section id="contact" class="contact">
+        <h2>Contact Me</h2>
 
-</section>
+        <form>
+          <input type="text" placeholder="Your Name" required />
 
-<section id="contact" class="contact">
+          <input type="email" placeholder="Your Email" required />
 
-    <h2>Contact Me</h2>
+          <textarea rows="5" placeholder="Your Message"></textarea>
 
-    <form>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
 
-        <input
-            type="text"
-            placeholder="Your Name"
-            required>
+      <footer>
+        <p>© 2026 Your Name. All Rights Reserved.</p>
+      </footer>
+    </main>
 
-        <input
-            type="email"
-            placeholder="Your Email"
-            required>
-
-        <textarea
-            rows="5"
-            placeholder="Your Message"></textarea>
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
-
-</section>
-
-<footer>
-
-    <p>
-        © 2026 Your Name. All Rights Reserved.
-    </p>
-
-</footer>
-
-</main>
-
-<script src="script.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
