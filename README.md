@@ -29,12 +29,15 @@ A responsive personal developer portfolio built using HTML5, CSS3, and JavaScrip
 
 ```
 dev-portfolio-v1/
+│
 ├── assets/
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
+│   ├── images/
+│   ├── icons/
+│   └── screenshots/
+│
 ├── index.html
+├── style.css
+├── script.js
 ├── README.md
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
@@ -59,11 +62,11 @@ https://github.com/HarshVardhanHV/dev-portfolio-v1
 
 ### Home Page
 
-![Home Page](assets/screenshots/home.png)
+![Home Page](assets/screenshots/Home.png)
 
 ### Dark Mode
 
-![Dark Mode](assets/screenshots/dark-mode.png)
+![Dark Mode](assets/screenshots/Dark-mode.png)
 
 ## Author
 
