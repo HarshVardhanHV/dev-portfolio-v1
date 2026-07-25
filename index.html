@@ -4,27 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>My Portfolio</title>
+    <title>Harsh Vardhan | Portfolio</title>
+
+    <meta
+      name="description"
+      content="Portfolio of Harsh Vardhan, Computer Engineering Graduate specializing in Full Stack Development and AI applications."
+    />
+
+    <meta
+      name="keywords"
+      content="Harsh Vardhan, Portfolio, Full Stack Developer, React, Node.js, FastAPI, AI"
+    />
+
+    <meta name="author" content="Harsh Vardhan" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <div class="progress-bar"></div>
     <header>
       <nav class="navbar">
-        <h2 class="logo">MyPortfolio</h2>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
 
-        <ul class="nav-links">
+        <div class="logo">HV</div>
+
+        <ul class="nav-links" id="nav-links">
           <li><a href="#hero">Home</a></li>
-
           <li><a href="#about">About</a></li>
-
           <li><a href="#skills">Skills</a></li>
-
           <li><a href="#tech">Tech Stack</a></li>
-
           <li><a href="#projects">Projects</a></li>
-
           <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -34,94 +58,294 @@
 
     <main>
       <section id="hero" class="hero">
-        <h1>Hello, I'm Your Name</h1>
+        <div class="hero-content">
+          <p class="hero-subtitle">👋 Hello, I'm</p>
 
-        <p>Aspiring Software Engineer</p>
+          <h1>
+            <span>Harsh Vardhan</span>
+          </h1>
 
-        <button>View Projects</button>
+          <h2 id="typing-text"></h2>
+
+          <p class="hero-description">
+            Passionate about building responsive web applications, solving
+            real-world problems, and exploring AI-powered solutions.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"> View Projects </a>
+
+            <a href="#contact" class="btn btn-secondary"> Contact Me </a>
+
+            <a
+              href="assets/images/23_July_2026_Resume.pdf"
+              class="btn btn-secondary"
+              download
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
       </section>
 
       <section id="about" class="about">
-        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="about-image">
+            <div class="profile-circle">
+              <img
+                src="assets/images/Harsh Vardhan.png"
+                alt="Harsh Vardhan"
+                class="profile-image"
+              />
+            </div>
+          </div>
 
-        <p>
-          I am an aspiring software engineer passionate about web development,
-          problem solving, and learning modern technologies.
-        </p>
+          <div class="about-content">
+            <h2>About Me</h2>
+
+            <p>
+              I am Harsh Vardhan, a passionate Software Engineer with a strong
+              focus on Coding and Web Development. I spend my days (and often
+              nights) bringing the digital world to life with lines of code and
+              innovative projects, transforming zeros and ones into dynamic,
+              interactive experiences.
+            </p>
+
+            <p>
+              When I'm not busy in coding or developing web experiences, you'll
+              likely find me diving into video games, flexing my creativity
+              through video and photo editing, or getting lost in music.
+            </p>
+
+            <div class="about-info">
+              <div>
+                <h4>Education</h4>
+                <p>B.E. Computer Engineering</p>
+              </div>
+
+              <div>
+                <h4>Location</h4>
+                <p>Pune, India</p>
+              </div>
+
+              <div>
+                <h4>Experience</h4>
+                <p>Fresher</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="skills" class="skills">
         <h2>Skills</h2>
 
-        <div class="skills-container">
+        <div class="skills-grid">
           <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
             <h3>Frontend</h3>
             <p>HTML5, CSS3, JavaScript</p>
           </div>
 
           <div class="skill-card">
-            <h3>Programming</h3>
-            <p>Java, Python</p>
+            <i class="fa-solid fa-gears"></i>
+            <h3>Backend</h3>
+            <p>Node.js, Express.js</p>
           </div>
 
           <div class="skill-card">
-            <h3>Tools</h3>
-            <p>Git, GitHub, VS Code</p>
+            <i class="fa-solid fa-database"></i>
+            <h3>Database</h3>
+            <p>MySQL</p>
+          </div>
+
+          <div class="skill-card">
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI</h3>
+            <p>Python, OpenRouter API</p>
           </div>
         </div>
       </section>
 
-      <section id="tech" class="tech-stack">
+      <section id="tech" class="tech">
         <h2>Tech Stack</h2>
 
-        <div class="tech-container">
+        <div class="tech-grid">
           <span>HTML5</span>
           <span>CSS3</span>
           <span>JavaScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>MySQL</span>
           <span>Git</span>
           <span>GitHub</span>
-          <span>VS Code</span>
-          <span>Learning React</span>
+          <span>Python</span>
         </div>
       </section>
 
       <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2>Featured Projects</h2>
 
-        <div class="project-container">
+        <div class="projects-grid">
+          <!-- Project 1 -->
+
           <div class="project-card">
-            <h3>AI Chatbot</h3>
-            <p>A simple chatbot built using JavaScript.</p>
+            <div class="project-icon">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+
+            <h3>Doctor Appointment System</h3>
+
+            <p>
+              A MERN stack web application for managing doctor appointments with
+              separate dashboards for Admin, Doctor, and Patient.
+            </p>
+
+            <div class="project-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+            </div>
+
+            <div class="project-buttons">
+              <a
+                href="https://github.com/HarshVardhanHV/DoctorAppointment"
+                target="_blank"
+                class="project-btn"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://doctorappointment-b6y5.onrender.com/"
+                target="_blank"
+                class="project-btn project-live"
+              >
+                Live Demo
+              </a>
+            </div>
           </div>
 
-          <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>This responsive portfolio website.</p>
-          </div>
+          <!-- Project 2 -->
 
           <div class="project-card">
-            <h3>Coming Soon</h3>
-            <p>Future projects will be added here.</p>
+            <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+
+            <h3>ArA - AI Research Assistant</h3>
+
+            <p>
+              AI chatbot powered by OpenRouter API that assists with research,
+              coding, and technical queries using Python.
+            </p>
+
+            <div class="project-tags">
+              <span>Python</span>
+              <span>OpenRouter</span>
+              <span>AI</span>
+            </div>
+
+            <div class="project-buttons">
+              <a href="#" target="_blank" class="project-btn"> GitHub </a>
+
+              <a href="#" target="_blank" class="project-btn project-live">
+                Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+
+          <div class="project-card">
+            <div class="project-icon">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+
+            <h3>Mar.io</h3>
+
+            <p>
+              A browser-based Mario-inspired platformer developed using HTML,
+              CSS, and JavaScript. Features smooth player movement, jumping
+              mechanics, enemy interactions, collision detection, score
+              tracking, and responsive gameplay.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-buttons">
+              <a
+                href="https://github.com/HarshVardhanHV/MAR.io"
+                target="_blank"
+                class="project-btn"
+              >
+                GitHub
+              </a>
+
+              <a
+                href="https://hvmario.netlify.app/"
+                target="_blank"
+                class="project-btn project-live"
+              >
+                Demo
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="contact" class="contact">
-        <h2>Contact Me</h2>
+        <h2>Let's Connect</h2>
 
-        <form>
-          <input type="text" placeholder="Your Name" required />
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>📧 Email</h3>
 
-          <input type="email" placeholder="Your Email" required />
+              <a href="mailto:harshvardhan96643@gmail.com"> harshvardhan96643@gmail.com </a>
+            </div>
 
-          <textarea rows="5" placeholder="Your Message"></textarea>
+            <div class="contact-item">
+              <h3>💻 GitHub</h3>
 
-          <button type="submit">Send Message</button>
-        </form>
+              <p>
+                <a href="https://github.com/HarshVardhanHV" target="_blank">
+                  https://github.com/HarshVardhanHV
+                </a>
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <h3>💼 LinkedIn</h3>
+
+              <p>
+                <a href="https://www.linkedin.com/in/harsh-vardhan03/" target="_blank">
+                  https://www.linkedin.com/in/harsh-vardhan03/
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <form>
+            <input type="text" placeholder="Name" />
+
+            <input type="email" placeholder="Email" />
+
+            <textarea placeholder="Message"> </textarea>
+
+            <button class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
       </section>
 
       <footer>
-        <p>© 2026 Your Name. All Rights Reserved.</p>
+        <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+
+        <p>© 2026 Harsh Vardhan</p>
       </footer>
     </main>
 
