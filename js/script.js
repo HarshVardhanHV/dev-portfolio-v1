@@ -1,7 +1,3 @@
-/* ==========================================
-   PORTFOLIO JAVASCRIPT
-========================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initMobileMenu();
@@ -10,10 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initActiveNav();
   initTypingEffect();
 });
-
-/* ==========================================
-   DARK MODE
-========================================== */
 
 function initTheme() {
   const themeBtn = document.getElementById("theme-toggle");
@@ -40,10 +32,6 @@ function initTheme() {
   });
 }
 
-/* ==========================================
-   MOBILE MENU
-========================================== */
-
 function initMobileMenu() {
   const menu = document.querySelector(".nav-links");
 
@@ -66,10 +54,6 @@ function initMobileMenu() {
   });
 }
 
-/* ==========================================
-   SCROLL PROGRESS BAR
-========================================== */
-
 function initScrollProgress() {
   const progress = document.querySelector(".progress-bar");
 
@@ -81,10 +65,6 @@ function initScrollProgress() {
     progress.style.width = (scroll / height) * 100 + "%";
   });
 }
-
-/* ==========================================
-   SCROLL REVEAL
-========================================== */
 
 function initScrollReveal() {
   const sections = document.querySelectorAll("section");
@@ -106,10 +86,6 @@ function initScrollReveal() {
 
   sections.forEach((section) => observer.observe(section));
 }
-
-/* ==========================================
-   ACTIVE NAV LINK
-========================================== */
 
 function initActiveNav() {
   const sections = document.querySelectorAll("section");
@@ -137,18 +113,12 @@ function initActiveNav() {
   });
 }
 
-/* ==========================================
-   TYPING EFFECT
-========================================== */
-
 function initTypingEffect() {
   const text = document.getElementById("typing-text");
 
   if (!text) return;
 
-  const words = [
-    "Software Engineer"
-  ];
+  const words = ["Software Engineer"];
 
   let wordIndex = 0;
 
